@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<head>
+<script src="/assets/jquery.js"></script>
+<link rel="stylesheet" href="imaging6.css">
+<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Neucha" rel="stylesheet"> 
+<script src="Scripts/imaging.js" type="text/javascript" ></script>
+
+<input type="search" placeholder="Search for...">
+  <input type="Submit">
+
+<ul class="menu">
+      <li><a href="#">English</a></li>
+      <li><a href="#">Index</a></li>
+      <li><a href="#">About Us</a></li>
+
+</ul>
+
+</head>
+
+
+<body>
+
+<div class="top">
+<h1>A Guide to Medical Imaging</h1>
+<h2>Find out about common imaging techniques used in healthcare today </h2>
+</div>
+
+ <ul class="navigation">
+      <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+       <li><a href="#">Resources</a></li>
+   <ul class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Modalities
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <ul class="dropdown-content" id="myDropdown">
+      <a href="#">X-Rays</a>
+      <a href="#">Ultrasound</a>
+      <a href="#">MRI</a>
+    </ul>
+  </ul> 
+
+
+  <ul class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Interesting Facts
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <ul class="dropdown-content" id="myDropdown">
+      <a href="#">Economics</a>
+      <a href="#">Technology</a>
+      <a href="#">Health</a>
+    </ul>
+  </ul> 
+
+  <ul class="dropdown">
+    <button class="dropbtn" onclick="myFunction()">Modalities
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <ul class="dropdown-content" id="myDropdown">
+      <a href="#">X-Rays</a>
+      <a href="#">Ultrasound</a>
+      <a href="#">MRI</a>
+    </ul>
+  </ul> 
+    
+
+    </ul>
+
+
+<p class="info"> Have you ever wanted to learn more about all the types of medical imaging done in hospitals today? Maybe you have a scan coming up and you want to find out more? Or perhaps you are interested in designing imaging systems of the future and want to learn about what's currently on the market? <br /> <br> Look no further! This website has complied information about all the common imaging modalities used in healthcare today,  a gallery of the types of images they produce, as well  as a comprehensive library of resources for further study. Use the navigation bar above to find your modality of interest or why not surprise yourself with some medical imaging facts first? </p>
+
+<div class="first">
+  <p>X-Rays <span class="price"></span><br />
+  <small>Mustard sierra leone bologi kale chard beet greens black-eyed pea sorrel amaranth garlic tigernut spring onion summer purslane asparagus lentil. </small></p>
+</div>
+
+<div class="second">
+  <p>Ultrasound <span class="price"></span><br />
+  <small>Tri-tip capicola kielbasa salami brisket chicken rump strip steak drumstick. Meatloaf chuck boudin ribeye pork jowl. Andouille bacon jowl meatloaf pork loin prosciutto bresaola.</small></p>
+</div>
+  
+<div class="dessert">
+  <p>MRI <span class="price"></span><br />
+  <small>Lollipop tart cotton candy jelly-o carrot cake apple pie cupcake. Jelly-o bear claw ice cream candy canes.</small></p>
+</div>
+
+<script>
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+    var myDropdown = document.getElementById("myDropdown");
+      if (myDropdown.classList.contains('show')) {
+        myDropdown.classList.remove('show');
+      }
+  }
+}
+</script>
+
+</body>
+</html>
